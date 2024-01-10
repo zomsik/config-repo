@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: zadanie2-deployment
+spec:
+  replicas: 4
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 5
+      maxUnavailable: 2
+  selector:
+    matchLabels:
+      app: zadanie2
+  template:
+    metadata:
+      labels:
+        app: zadanie2
+    spec:
+      containers:
+      - name: zadanie2-container
+        image: obraz:wersja
+        ports:
+        - containerPort: 80

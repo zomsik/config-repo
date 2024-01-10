@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: zadanie2-ingress
+spec:
+  rules:
+  - host: zadanie2.pl
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: zadanie2-service
+            port:
+              number: 80
