@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
       - name: zadanie2-container
-        image: zomsik/zadanie2:1.0
+        image: zomsik/zadanie2:1.1
         ports:
         - containerPort: 80
