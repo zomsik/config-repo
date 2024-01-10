@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
       - name: zadanie2-container
-        image: obraz:wersja
+        image: zadanie2:latest
         ports:
         - containerPort: 80

@@ -4,7 +4,7 @@ metadata:
   name: zadanie2-ingress
 spec:
   rules:
-  - host: zadanie2.pl
+  - host: zad2.lab
     http:
       paths:
       - path: /
